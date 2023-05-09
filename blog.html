@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Travago | Blog</title>
+
+  <link rel="stylesheet" href="blog.css">
+
+  <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/fontawesome/css/solid.css" rel="stylesheet">
+  <link href="/fontawesome/css/regular.css" rel="stylesheet">
+  <link href="/fontawesome/css/brands.css" rel="stylesheet">
+
+</head>
+
+<body class="page-transition-in">
+
+  <!------ Sub-Header ------->
+
+  <section class="sub-header">
+    <nav>
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo" class="logo">
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-times" id="close-btn" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><i class="fa-regular fa-moon" id="dark-btn" onclick="toggleDarkMode()"></i></li>
+        </ul>
+      </div>
+
+      <i class="fa-solid fa-bars" id="open-btn" onclick="showMenu()"></i>
+    </nav>
+
+    <h1>Our Spezi-Voucher & Travel Destinations for 2024</h1>
+  </section>
+
+
+
+  <!------ blog-content ------->
+
+  <section class="blog-content">
+    <div class="row">
+
+      <div class="blog-left">
+        <img src="/images/img_27.jpg" alt="voucher">
+        <h2>Spezi-Voucher & Destinations</h2>
+        <p>
+          Are you looking for an adventure in 2024?
+          Look no further than our special vouchers and travel destinations!
+          We offer a variety of exciting travel packages that cater to your interests and budget.
+        </p>
+        <br>
+        <p>
+          One of our top travel destinations is Bali, Indonesia.
+          Immerse yourself in the vibrant culture, explore the stunning temples, and relax on the beautiful beaches.
+          Or perhaps you're looking for an adrenaline-packed adventure?
+          Our New Zealand package offers bungee jumping, skydiving, and white water rafting.
+        </p>
+        <br>
+        <p>
+          For those seeking a more luxurious vacation, we offer a package to the Maldives.
+          Enjoy pristine beaches, crystal-clear waters, and stay in stunning overwater bungalows.
+          Our European packages offer a mix of culture and history, with destinations such as Paris, London, and Rome.
+        </p>
+        <br>
+        <p>
+          Don't forget to take advantage of our special vouchers, which offer even more savings on your next adventure.
+          Whether you're traveling with friends, family, or solo, we have a travel package that is tailored to your
+          needs.
+          Book now and let us help you plan the trip of a lifetime!
+        </p>
+
+        <div class="comment-box">
+          <h3>Leave a comment</h3>
+
+          <form class="comment-form" name="comment-form" onsubmit="return validateForm()">
+            <input type="text" placeholder="Enter Name" name="name" required>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <textarea name="comment" id="" rows="5" placeholder="Your Comment" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Post Comment</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="blog-right">
+        <h3>Destination Analytics for 2022</h3>
+
+        <div>
+          <span>Bali</span>
+          <span>34</span>
+        </div>
+
+        <div>
+          <span>Maldives</span>
+          <span>27</span>
+        </div>
+
+        <div>
+          <span>Japan</span>
+          <span>41</span>
+        </div>
+
+        <div>
+          <span>Seychelles</span>
+          <span>12</span>
+        </div>
+
+        <div>
+          <span>Bora Bora</span>
+          <span>23</span>
+        </div>
+
+        <div>
+          <span>Machu Picchu</span>
+          <span>45</span>
+        </div>
+
+        <div>
+          <span>Cappadocia</span>
+          <span>35</span>
+        </div>
+
+        <div>
+          <span>The Great Barrier Reef</span>
+          <span>11</span>
+        </div>
+
+        <div>
+          <span>Santorini</span>
+          <span>19</span>
+        </div>
+
+        <div>
+          <span>Salar de Uyuni</span>
+          <span>52</span>
+        </div>
+
+        <div>
+          <span>Marrakech</span>
+          <span>78</span>
+        </div>
+
+        <div>
+          <span>Dubrovnik</span>
+          <span>6</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!------ Footer ------->
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>
+      At our travel company, we are passionate about creating unforgettable experiences for our clients.
+      <br>
+      With years of experience and a commitment to exceptional service, we are dedicated to making your dream vacation a
+      reality.
+    </p>
+
+    <div class="icons">
+      <i class="fa-brands fa-telegram" onclick="redirectTo('https://t.me/varaticalexandru')"></i>
+      <i class="fa-brands fa-facebook" onclick="redirectTo('https://www.facebook.com/varaticalexandru1/')"></i>
+      <i class="fa-brands fa-instagram" onclick="redirectTo('https://www.instagram.com/alx_vrt/')"></i>
+      <i class="fa-brands fa-linkedin" onclick="redirectTo('https://www.linkedin.com/in/alexandru-varatic-653313217/')"></i>
+      <i class="fa-brands fa-github" onclick="redirectTo('https://github.com/varaticalexandru')"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i> by Alexandru Varatic</p>
+  </section>
+
+
+
+
+
+
+
+
+  <!----------------------- JavaScript ------------------------>
+
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+    window.addEventListener('beforeunload', function () {
+      document.body.classList.add('page-transition-out');
+    });
+
+    function redirectTo(url) {
+      window.location.href = url;
+    }
+
+    function validateForm() {
+
+      // get data from comment-form
+      const name = document.forms["comment-form"]["name"].value;
+      const email = document.forms["comment-form"]["email"].value;
+      const comment = document.forms["comment-form"]["comment"].value;
+
+      // validate name
+      if (name == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+
+      // validate email
+      // RegEx pattern for email addresses
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email) || email == "") {
+        alert("Invalid email address");
+        return false;
+      }
+
+      // validate comment
+      if (comment == "") {
+        alert("Comment must be filled out");
+        return false;
+      }
+
+
+      // form validation succeeded
+      alert('Thank you for your comment');
+      return true;
+    }
+
+
+    function toggleDarkMode() {
+      const body = document.body;
+      const navLinks = document.querySelectorAll(".nav-links li a");
+      const darkBtn = document.getElementById("dark-btn");
+
+      body.classList.toggle("dark-theme");
+
+      if (body.classList.contains("dark-theme")) {
+          darkBtn.classList.add("fa-sun");
+      } else {
+          darkBtn.classList.remove("fa-sun");
+      }
+
+      // Save the user's preference to local storage
+      if (body.classList.contains("dark-theme")) {
+          localStorage.setItem("darkMode", "enabled");
+      } else {
+          localStorage.setItem("darkMode", "disabled");
+      }
+    }
+
+    // Check if the user has a preference for dark mode
+    const currentMode = localStorage.getItem("darkMode");
+    if (currentMode === "enabled") {
+        toggleDarkMode();
+    }
+
+  </script>
+
+</body>
+
+
+</html>
