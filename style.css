@@ -236,6 +236,10 @@ nav .fa-solid {
         padding: 30px;
     }
 
+    body, html {
+        overflow-x: hidden;
+    }
+
 }
 
 
